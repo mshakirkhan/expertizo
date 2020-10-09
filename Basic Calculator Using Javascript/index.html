@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 01</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="calculator_container">
+      <div class="result-screen">
+        <!-- <input type="text" class="result" /> -->
+        <div class="result" id="result">
+          <div id="calculated-numbers"></div>
+        </div>
+        <!-- <div id="result"></div> -->
+      </div>
+      <div class="cal-keys">
+        <table class="table">
+          <tr class="first-row">
+            <td class="single-key" onclick="getinput('c')">C</td>
+            <td class="single-key">√</td>
+            <td class="single-key" onclick="getinput('/')">/</td>
+            <td class="single-key" onclick="getinput('*')">*</td>
+          </tr>
+          <tr class="row">
+            <td class="single-key" onclick="getinput(7)">7</td>
+            <td class="single-key" onclick="getinput(8)">8</td>
+            <td class="single-key" onclick="getinput(9)">9</td>
+            <td class="single-key" onclick="getinput('-')">-</td>
+          </tr>
+          <tr class="row">
+            <td class="single-key" onclick="getinput(4)">4</td>
+            <td class="single-key" onclick="getinput(5)">5</td>
+            <td class="single-key" onclick="getinput(6)">6</td>
+            <td class="single-key" onclick="getinput('+')">+</td>
+          </tr>
+          <tr class="row">
+            <td class="single-key" onclick="getinput(1)">1</td>
+            <td class="single-key" onclick="getinput(2)">2</td>
+            <td class="single-key" onclick="getinput(3)">3</td>
+            <td rowspan="2" class="big-btn" onclick="getinput('=')">=</td>
+          </tr>
+          <tr class="row">
+            <td colspan="2" onclick="getinput(0)">0</td>
+            <td>.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
